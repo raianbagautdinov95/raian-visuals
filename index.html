@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raian Visuals — видео, 3D и соцсети для продажи ЖК</title>
+<meta name="description" content="Raian Visuals готовит застройщикам и риэлторам комплект для продаж: 3D-модель объекта, фотореалистичные виды, ролики с ведущим и контент для соцсетей.">
+<meta name="theme-color" content="#08113A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Raian Visuals — видео, 3D и соцсети для продажи ЖК">
+<meta property="og:description" content="3D models, photoreal views, presenter-led reels and social content for selling new developments.">
+<meta property="og:url" content="https://raianbagautdinov95.github.io/raian-visuals/">
+<link rel="canonical" href="https://raianbagautdinov95.github.io/raian-visuals/">
+<!-- Картинка для превью ссылки: адрес полный. При переезде на другой адрес замените его здесь и в og:url -->
+<meta property="og:image" content="https://raianbagautdinov95.github.io/raian-visuals/media/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2308113A'/%3E%3Crect x='11.5' y='5' width='9' height='22' fill='%231C9BFF'/%3E%3C/svg%3E">
+<script>
+/* Язык выбирается до первой отрисовки, чтобы текст не мигал */
+(function () {
+  var l = null;
+  try { l = localStorage.getItem('rs-lang'); } catch (e) {}
+  if (l !== 'ru' && l !== 'en') {
+    l = /^(ru|uk|be|kk)\b/i.test(navigator.language || '') ? 'ru' : 'en';
+  }
+  document.documentElement.lang = l;
+})();
+</script>
+<link rel="preload" as="image" href="media/posters/hero-build.webp" media="(max-width: 899.98px)" fetchpriority="high">
+<link rel="preload" as="image" href="media/posters/hero-aerial.webp" media="(min-width: 900px)" fetchpriority="high">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#products"><span lang="ru">Перейти к продуктам</span><span lang="en">Skip to products</span></a>
+
+<header class="top">
+  <a class="brand" href="#top">Raian Visuals</a>
+  <nav class="nav" data-label-ru="Разделы" data-label-en="Sections" aria-label="Разделы">
+    <a href="#model"><span lang="ru">3D-модель</span><span lang="en">3D model</span></a>
+    <a href="#products"><span lang="ru">Продукты</span><span lang="en">Products</span></a>
+    <a href="#examples"><span lang="ru">Примеры</span><span lang="en">Examples</span></a>
+    <a href="#steps"><span lang="ru">Этапы</span><span lang="en">Process</span></a>
+    <a href="#faq"><span lang="ru">Вопросы</span><span lang="en">FAQ</span></a>
+  </nav>
+  <div class="lang" role="group" aria-label="Язык / Language">
+    <button type="button" data-set-lang="ru" aria-pressed="true" aria-label="Русский">RU</button>
+    <button type="button" data-set-lang="en" aria-pressed="false" aria-label="English">EN</button>
+  </div>
+  <a class="btn top__cta" href="https://t.me/raian_bagautdinov" target="_blank" rel="noopener">
+    <span lang="ru">Написать в Telegram</span><span lang="en">Message on Telegram</span>
+  </a>
+</header>
+
+<main>
+
+<section class="hero is-intro" id="top">
+  <!-- Сцены первого экрана описаны в script.js (HERO_SCENES): для телефона вертикальные, для компьютера горизонтальные -->
+  <div class="hero__wall">
+    <a class="panel is-active js-play" href="media/complex-build.mp4"
+      data-video="media/complex-build.mp4" data-poster="media/posters/complex-build.webp" data-ratio="9/16"
+      data-title-ru="Комплекс строится сам" data-title-en="The complex builds itself">
+      <video muted playsinline preload="none" tabindex="-1" aria-hidden="true"></video>
+      <span class="panel__label"><span class="panel__play" aria-hidden="true"></span><span class="panel__name"></span></span>
+    </a>
+    <a class="panel js-play" href="media/estate-presentation.mp4"
+      data-video="media/estate-presentation.mp4" data-poster="media/posters/estate-presentation.webp" data-ratio="16/9"
+      data-title-ru="Презентация объекта" data-title-en="Property presentation">
+      <video muted playsinline preload="none" tabindex="-1" aria-hidden="true"></video>
+      <span class="panel__label"><span class="panel__play" aria-hidden="true"></span><span class="panel__name"></span></span>
+    </a>
+    <a class="panel js-play" href="media/estate-presentation.mp4"
+      data-video="media/estate-presentation.mp4" data-poster="media/posters/estate-presentation.webp" data-ratio="16/9"
+      data-title-ru="Презентация объекта" data-title-en="Property presentation">
+      <video muted playsinline preload="none" tabindex="-1" aria-hidden="true"></video>
+      <span class="panel__label"><span class="panel__play" aria-hidden="true"></span><span class="panel__name"></span></span>
+    </a>
+  </div>
+
+  <div class="hero__bars" role="group" data-label-ru="Сцены первого экрана" data-label-en="Scenes on this screen" aria-label="Сцены первого экрана">
+    <button type="button" class="is-active" aria-label="1"><i></i></button>
+    <button type="button" aria-label="2"><i></i></button>
+    <button type="button" aria-label="3"><i></i></button>
+  </div>
+
+  <button class="hero__pause" type="button" hidden>
+    <span data-state="playing"><span lang="ru">Пауза</span><span lang="en">Pause</span></span>
+    <span data-state="paused"><span lang="ru">Продолжить</span><span lang="en">Resume</span></span>
+  </button>
+
+  <div class="hero__text">
+    <div class="hero__head">
+      <h1 class="hero__title">
+        <span lang="ru">Видео, 3D и&nbsp;соцсети <br>для&nbsp;продажи&nbsp;ЖК</span>
+        <span lang="en">Video, 3D and&nbsp;social <br>to&nbsp;sell new&nbsp;homes</span>
+      </h1>
+    </div>
+    <div class="hero__side">
+      <p class="hero__lede">
+        <span lang="ru">Raian Visuals готовит застройщикам и риэлторам комплект для продаж: 3D-модель, виды, ролики и соцсети.<span class="hero__more"> Объект можно показать покупателю ещё до сдачи.</span></span>
+        <span lang="en">Raian Visuals gives developers and realtors a sales kit: a 3D model, views, films and social content.<span class="hero__more"> Show the property to buyers before it is built.</span></span>
+      </p>      <div class="hero__actions">
+        <a class="btn" href="https://t.me/raian_bagautdinov" target="_blank" rel="noopener">
+          <span lang="ru">Написать в Telegram</span><span lang="en">Message on Telegram</span>
+        </a>
+        <a class="btn btn--ghost" href="#products">
+          <span lang="ru">Что можно заказать</span><span lang="en">What you can order</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="value">
+  <div class="wrap">
+    <h2 class="band__title"><span lang="ru">Что получает отдел продаж</span><span lang="en">What your sales team gets</span></h2>
+    <ul class="band__list">
+      <li>
+        <h3><span lang="ru">Дом виден до сдачи</span><span lang="en">The home is visible before completion</span></h3>
+        <p>
+          <span lang="ru">Покупатель смотрит готовый комплекс и квартиру, пока идёт стройка. Материалы помечаются как визуализация проекта.</span>
+          <span lang="en">Buyers look at the finished complex and apartment while construction is under way. Materials are marked as a project visualisation.</span>
+        </p>
+      </li>
+      <li>
+        <h3><span lang="ru">Один стиль, все материалы</span><span lang="en">One style, every asset</span></h3>
+        <p>
+          <span lang="ru">Виды, ролики и интерьеры одного объекта выглядят одинаково на сайте, в объявлениях и соцсетях.</span>
+          <span lang="en">Views, films and interiors of one property look the same on your website, in listings and on social.</span>
+        </p>
+      </li>
+      <li>
+        <h3><span lang="ru">Ведущий без съёмок</span><span lang="en">A presenter without a shoot</span></h3>
+        <p>
+          <span lang="ru">Виртуальный ведущий проводит по квартире и зовёт на просмотр. Съёмочный день и актёр не нужны.</span>
+          <span lang="en">A virtual presenter walks buyers through the apartment and invites them to a viewing. No shoot day, no actor.</span>
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="model wrap" id="model">
+  <div class="model__head">
+    <h2 class="title"><span lang="ru">Покрутите комплекс сами</span><span lang="en">Spin the complex yourself</span></h2>
+    <p class="lede">
+      <span lang="ru">Это рабочая 3D-модель комплекса у моря. Из неё сделаны его виды и ролики на этом сайте. Такую же можно поставить на сайт ЖК, чтобы покупатель сам рассмотрел дом, двор и выход к морю.</span>
+      <span lang="en">This is the working 3D model of the seaside complex. Its views and films on this site are made from it. The same model can sit on a development's website, so buyers explore the building, the courtyard and the way to the sea themselves.</span>
+    </p>
+  </div>
+
+  <div class="viewer" id="viewer" data-state="idle">
+    <div class="viewer__stage" tabindex="-1" data-label-ru="3D-модель жилого комплекса. Стрелки вращают, плюс и минус приближают" data-label-en="3D model of the residential complex. Arrow keys rotate, plus and minus zoom" aria-label="3D-модель жилого комплекса. Стрелки вращают, плюс и минус приближают">
+      <picture class="viewer__poster">
+        <source media="(max-width: 699.98px)" srcset="media/model/complex-tall.webp" width="900" height="1125">
+        <img src="media/model/complex-wide.webp" srcset="media/model/complex-wide-800.webp 800w, media/model/complex-wide.webp 1600w" sizes="(min-width: 900px) 92vw, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt=""
+          data-alt-ru="Два семиэтажных корпуса с бассейном во дворе, пальмы и пляж рядом" data-alt-en="Two seven-storey buildings with a courtyard pool, palms and a beach nearby">
+      </picture>
+      <div class="viewer__canvas"></div>
+
+      <button class="btn viewer__start" type="button" hidden>
+        <span lang="ru">Открыть 3D-модель</span><span lang="en">Open the 3D model</span>
+        <small><span lang="ru">около 3 МБ</span><span lang="en">about 3 MB</span></small>
+      </button>
+      <p class="viewer__status viewer__status--loading" role="status">
+        <span lang="ru">Загружаю модель…</span><span lang="en">Loading the model…</span>
+      </p>
+      <div class="viewer__status viewer__status--error">
+        <p><span lang="ru">Этот браузер не смог показать 3D.</span><span lang="en">This browser could not show the 3D model.</span></p>
+        <a class="btn btn--ghost js-play" href="media/flyover.mp4" data-video="media/flyover.mp4" data-poster="media/posters/flyover.webp" data-ratio="16/9"
+          data-title-ru="Облёт комплекса" data-title-en="Flyover of the complex">
+          <span lang="ru">Смотреть облёт комплекса</span><span lang="en">Watch the flyover</span>
+        </a>
+      </div>
+
+      <button class="viewer__lock" type="button" aria-pressed="false">
+        <span class="viewer__lock-off"><span lang="ru">Крутить модель</span><span lang="en">Rotate the model</span></span>
+        <span class="viewer__lock-on"><span lang="ru">Листать страницу</span><span lang="en">Scroll the page</span></span>
+      </button>
+
+      <div class="viewer__zoom">
+        <button type="button" data-zoom="in" data-label-ru="Приблизить" data-label-en="Zoom in" aria-label="Приблизить">+</button>
+        <button type="button" data-zoom="out" data-label-ru="Отдалить" data-label-en="Zoom out" aria-label="Отдалить">&minus;</button>
+      </div>
+
+      <p class="viewer__hint viewer__hint--mouse">
+        <span lang="ru">Зажмите и тяните, чтобы вращать. Колесо приближает, правая кнопка сдвигает.</span>
+        <span lang="en">Hold and drag to rotate. The wheel zooms, the right button moves.</span>
+      </p>
+      <p class="viewer__hint viewer__hint--touch">
+        <span lang="ru">Один палец вращает, два приближают и сдвигают.</span>
+        <span lang="en">One finger rotates, two fingers zoom and move.</span>
+      </p>
+    </div>
+
+    <div class="viewer__bar">
+      <div class="viewer__group viewer__group--views" role="group" data-label-ru="Ракурс" data-label-en="View" aria-label="Ракурс">
+        <button type="button" data-view="start" aria-pressed="true"><span lang="ru">Обзор</span><span lang="en">Overview</span></button>
+        <button type="button" data-view="yard" aria-pressed="false"><span lang="ru">Двор</span><span lang="en">Yard</span></button>
+        <button type="button" data-view="sea" aria-pressed="false"><span lang="ru">С моря</span><span lang="en">Sea side</span></button>
+        <button type="button" data-view="top" aria-pressed="false"><span lang="ru">Сверху</span><span lang="en">Top</span></button>
+      </div>
+      <div class="viewer__group" role="group" data-label-ru="Время суток" data-label-en="Time of day" aria-label="Время суток">
+        <button type="button" data-mode="day" aria-pressed="true"><span lang="ru">День</span><span lang="en">Day</span></button>
+        <button type="button" data-mode="eve" aria-pressed="false"><span lang="ru">Вечер</span><span lang="en">Evening</span></button>
+      </div>
+    </div>
+  </div>
+
+  <p class="model__note">
+    <span lang="ru">Модель показана без фотореалистичной обработки. Проект — визуализация.</span>
+    <span lang="en">The model is shown without photoreal finishing. The project is a visualisation.</span>
+  </p>
+</section>
+
+<section class="products wrap" id="products">
+  <h2 class="title"><span lang="ru">Что можно заказать</span><span lang="en">What you can order</span></h2>
+  <p class="lede">
+    <span lang="ru">Четыре продукта для продажи жилого комплекса. Можно взять один или собрать комплект. Цену и срок называю до начала работы.</span>
+    <span lang="en">Four products for selling a residential development. Take one or combine them. You get the price and the timeline before work starts.</span>
+  </p>
+  <div class="products__grid">
+    <article class="product product--a">
+      <div class="product__media"><img src="media/stills/view-aerial-day-800.webp" width="800" height="450" loading="lazy" decoding="async" alt=""></div>
+      <div class="product__body">
+        <h3><span lang="ru">3D-модель и виды ЖК</span><span lang="en">3D model and views</span></h3>
+        <p class="product__why"><span lang="ru">Основа для всего остального: объект собран в 3D и показан с лучших точек.</span><span lang="en">The base for everything else: the property built in 3D and shown from its best angles.</span></p>
+        <ul class="product__list">
+          <li><span lang="ru">3D-модель комплекса по чертежам и планировкам</span><span lang="en">A 3D model of the complex from drawings and floor plans</span></li>
+          <li><span lang="ru">Виды днём и вечером: с воздуха, двор, вход, улица</span><span lang="en">Day and evening views: aerial, courtyard, entrance, street</span></li>
+          <li><span lang="ru">Интерьеры планировок</span><span lang="en">Interiors of the layouts</span></li>
+          <li><span lang="ru">Изображения 2K для объявлений, сайта и печати</span><span lang="en">2K images for listings, your website and print</span></li>
+        </ul>
+        <p class="product__result"><span lang="ru">Результат: набор изображений и модель для роликов.</span><span lang="en">Result: a set of images and a model ready for films.</span></p>
+        <a class="product__cta" href="https://t.me/raian_bagautdinov" target="_blank" rel="noopener"><span lang="ru">Обсудить в Telegram</span><span lang="en">Discuss on Telegram</span></a>
+      </div>
+    </article>
+    <article class="product product--b">
+      <div class="product__media"><img src="media/posters/flyover.webp" width="1280" height="720" loading="lazy" decoding="async" alt=""></div>
+      <div class="product__body">
+        <h3><span lang="ru">Ролики объекта</span><span lang="en">Property films</span></h3>
+        <p class="product__why"><span lang="ru">Показывают комплекс целиком и квартиру изнутри: для сайта, показов и рекламы.</span><span lang="en">They show the whole complex and the apartment inside, for your website, viewings and ads.</span></p>
+        <ul class="product__list">
+          <li><span lang="ru">Облёт комплекса и территории</span><span lang="en">A flyover of the complex and grounds</span></li>
+          <li><span lang="ru">Презентация: главные виды в одном ролике</span><span lang="en">A presentation: the key views in one film</span></li>
+          <li><span lang="ru">Тур по комнатам каждой планировки</span><span lang="en">A tour through the rooms of each layout</span></li>
+          <li><span lang="ru">Ролик «дом строится на глазах»</span><span lang="en">A film where the building rises before your eyes</span></li>
+        </ul>
+        <p class="product__result"><span lang="ru">Результат: ролики 16:9 и 9:16, версии 1080p и 4K.</span><span lang="en">Result: 16:9 and 9:16 films in 1080p and 4K.</span></p>
+        <a class="product__cta" href="https://t.me/raian_bagautdinov" target="_blank" rel="noopener"><span lang="ru">Обсудить в Telegram</span><span lang="en">Discuss on Telegram</span></a>
+      </div>
+    </article>
+    <article class="product product--c product--accent">
+      <div class="product__media"><img src="media/posters/realtor-reel-pool.webp" width="720" height="1280" loading="lazy" decoding="async" alt=""></div>
+      <div class="product__body">
+        <h3><span lang="ru">Reels с ведущим</span><span lang="en">Presenter-led Reels</span></h3>
+        <p class="product__why"><span lang="ru">Вертикальные ролики, в которых виртуальный ведущий показывает объект и зовёт написать.</span><span lang="en">Vertical films where a virtual presenter shows the property and asks viewers to message.</span></p>
+        <ul class="product__list">
+          <li><span lang="ru">Ведущий, придуманный под ваш объект</span><span lang="en">A presenter created for your property</span></li>
+          <li><span lang="ru">Смелая фраза в первые секунды</span><span lang="en">A bold line in the first seconds</span></li>
+          <li><span lang="ru">Текст на экране появляется вместе с речью</span><span lang="en">On-screen text appears with the speech</span></li>
+          <li><span lang="ru">Призыв: что написать, чтобы получить планировку</span><span lang="en">A call to action: what to message to get the floor plan</span></li>
+        </ul>
+        <p class="product__result"><span lang="ru">Результат: ролик 9:16 на 15–25 секунд.</span><span lang="en">Result: a 9:16 film of 15–25 seconds.</span></p>
+        <a class="product__cta" href="https://t.me/raian_bagautdinov" target="_blank" rel="noopener"><span lang="ru">Обсудить в Telegram</span><span lang="en">Discuss on Telegram</span></a>
+      </div>
+    </article>
+    <article class="product product--d">
+      <div class="product__media"><span class="product__feed"><img src="media/posters/complex-build.webp" width="720" height="1280" loading="lazy" decoding="async" alt=""><img src="media/posters/apartment-tour.webp" width="720" height="1280" loading="lazy" decoding="async" alt=""><img src="media/posters/realtor-reel.webp" width="720" height="1280" loading="lazy" decoding="async" alt=""></span></div>
+      <div class="product__body">
+        <h3><span lang="ru">Соцсети ЖК под ключ</span><span lang="en">Social media for the development</span></h3>
+        <p class="product__why"><span lang="ru">Регулярный контент для Instagram и TikTok объекта в одном стиле.</span><span lang="en">Regular content for the development’s Instagram and TikTok in one consistent style.</span></p>
+        <ul class="product__list">
+          <li><span lang="ru">Контент-план на месяц</span><span lang="en">A content plan for the month</span></li>
+          <li><span lang="ru">Reels с ведущим и ролики объекта</span><span lang="en">Presenter-led Reels and property films</span></li>
+          <li><span lang="ru">Сторис и обложки</span><span lang="en">Stories and covers</span></li>
+          <li><span lang="ru">Подписи с призывом к действию</span><span lang="en">Captions with a call to action</span></li>
+        </ul>
+        <div class="plan">
+          <h4><span lang="ru">Пример плана на неделю</span><span lang="en">A sample week</span></h4>
+          <dl class="plan__days">
+            <div><dt><span lang="ru">Пн</span><span lang="en">Mon</span></dt><dd><span lang="ru">Reels: дом строится на глазах</span><span lang="en">Reel: the building rises before your eyes</span></dd></div>
+            <div><dt><span lang="ru">Ср</span><span lang="en">Wed</span></dt><dd><span lang="ru">Карусель: планировка и три вида из окон</span><span lang="en">Carousel: a floor plan and three window views</span></dd></div>
+            <div><dt><span lang="ru">Пт</span><span lang="en">Fri</span></dt><dd><span lang="ru">Reels с ведущим: обзор квартиры и призыв написать</span><span lang="en">Presenter-led Reel: an apartment tour with a call to message</span></dd></div>
+            <div><dt><span lang="ru">Вс</span><span lang="en">Sun</span></dt><dd><span lang="ru">Сторис: двор и территория, ответы на вопросы</span><span lang="en">Stories: the courtyard and grounds, answers to questions</span></dd></div>
+          </dl>
+        </div>
+        <p class="product__result"><span lang="ru">Результат: готовые к публикации ролики и тексты по графику.</span><span lang="en">Result: films and captions ready to publish, on schedule.</span></p>
+        <a class="product__cta" href="https://t.me/raian_bagautdinov" target="_blank" rel="noopener"><span lang="ru">Обсудить в Telegram</span><span lang="en">Discuss on Telegram</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="formats wrap" id="examples">
+  <h2 class="title"><span lang="ru">Примеры работ</span><span lang="en">Examples</span></h2>
+  <p class="lede">
+    <span lang="ru">Три демонстрационных проекта: дом на набережной Петербурга, квартал у Лахты и жилой комплекс у моря. Объекты придуманы, чтобы показать форматы. Нажмите на кадр, чтобы посмотреть ролик.</span>
+    <span lang="en">Three demonstration projects: a house on a St Petersburg embankment, a quarter near Lakhta and a seaside residential complex. The properties are invented to show the formats. Tap a frame to watch the film.</span>
+  </p>
+
+  <div class="block">
+    <div class="block__head">
+      <h3><span lang="ru">Петербург: дом и квартал</span><span lang="en">St Petersburg: a house and a quarter</span></h3>
+      <p>
+        <span lang="ru">Два вертикальных ролика для городских объектов. В первом ведущая показывает дом и квартиру, во втором квартал строится на глазах.</span>
+        <span lang="en">Two vertical films for city properties. In the first a presenter shows the house and the apartment, in the second the quarter is built before your eyes.</span>
+      </p>
+    </div>
+    <div class="pair">
+      <figure class="shot shot--tall">
+        <a class="shot__open js-play" href="media/house-on-palm.mp4" data-preview="media/previews/house-on-palm.mp4"
+          data-video="media/house-on-palm.mp4" data-poster="media/posters/house-on-palm.webp" data-ratio="9/16"
+          data-title-ru="Дом на ладони" data-title-en="The house on her palm">
+          <img src="media/posters/house-on-palm.webp" width="720" height="1280" loading="lazy" decoding="async" alt=""
+            data-alt-ru="Ведущая на набережной держит на ладони макет дома" data-alt-en="A presenter on the embankment holds a model of the house on her palm">
+          <span class="shot__play" aria-hidden="true"></span>
+        </a>
+        <figcaption>
+          <strong><span lang="ru">Дом на ладони</span><span lang="en">The house on her palm</span></strong>
+          <span lang="ru">Ведущая ставит дом с набережной на ладонь и заходит в квартиру. 28 секунд.</span>
+          <span lang="en">A presenter lifts the embankment house onto her palm and steps into the apartment. 28 seconds.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="shot shot--tall">
+        <a class="shot__open js-play" href="media/quarter-build.mp4" data-preview="media/previews/quarter-build.mp4"
+          data-video="media/quarter-build.mp4" data-poster="media/posters/quarter-build.webp" data-ratio="9/16"
+          data-title-ru="Квартал строится на глазах" data-title-en="The quarter builds before your eyes">
+          <img src="media/posters/quarter-build.webp" width="720" height="1280" loading="lazy" decoding="async" alt=""
+            data-alt-ru="Готовый квартал с двором и детской площадкой на закате" data-alt-en="The finished quarter with a courtyard and playground at sunset">
+          <span class="shot__play" aria-hidden="true"></span>
+        </a>
+        <figcaption>
+          <strong><span lang="ru">Квартал строится на глазах</span><span lang="en">The quarter builds before your eyes</span></strong>
+          <span lang="ru">Чертёж, стройка и готовый двор у Лахты. 25 секунд.</span>
+          <span lang="en">A blueprint, construction and the finished courtyard near Lakhta. 25 seconds.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block__head">
+      <h3><span lang="ru">Дом, которого ещё нет</span><span lang="en">A home that isn't built yet</span></h3>
+      <p>
+        <span lang="ru">Вертикальные ролики для Reels, сторис и объявлений. Два из трёх ведёт виртуальный ведущий.</span>
+        <span lang="en">Vertical films for Reels, stories and listings. Two of the three are led by a virtual presenter.</span>
+      </p>
+    </div>
+    <div class="wall">
+      <figure class="shot shot--tall shot--lead">
+        <a class="shot__open js-play" href="media/complex-build.mp4" data-preview="media/previews/complex-build.mp4"
+          data-video="media/complex-build.mp4" data-poster="media/posters/complex-build.webp" data-ratio="9/16"
+          data-title-ru="Комплекс строится сам" data-title-en="The complex builds itself">
+          <img src="media/posters/complex-build.webp" width="720" height="1280" alt=""
+            data-alt-ru="Готовый жилой дом на закате" data-alt-en="The finished residential building at sunset">
+          <span class="shot__play" aria-hidden="true"></span>
+        </a>
+        <figcaption>
+          <strong><span lang="ru">Комплекс строится сам</span><span lang="en">The complex builds itself</span></strong>
+          <span lang="ru">От пустого участка до света в окнах. 15 секунд.</span>
+          <span lang="en">From an empty plot to lights in the windows. 15 seconds.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="shot shot--tall">
+        <a class="shot__open js-play" href="media/apartment-tour.mp4" data-preview="media/previews/apartment-tour.mp4"
+          data-video="media/apartment-tour.mp4" data-poster="media/posters/apartment-tour.webp" data-ratio="9/16"
+          data-title-ru="Обзор квартиры с ведущим" data-title-en="Apartment tour with a presenter">
+          <img src="media/posters/apartment-tour.webp" width="720" height="1280" loading="lazy" decoding="async" alt=""
+            data-alt-ru="Ведущий в готовой гостиной с видом на море" data-alt-en="A presenter in the finished living room with a sea view">
+          <span class="shot__play" aria-hidden="true"></span>
+        </a>
+        <figcaption>
+          <strong><span lang="ru">Обзор квартиры с ведущим</span><span lang="en">Apartment tour with a presenter</span></strong>
+          <span lang="ru">Черновая отделка на глазах становится готовым интерьером. 15 секунд.</span>
+          <span lang="en">Bare concrete turns into a finished interior as he walks. 15 seconds.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="shot shot--tall">
+        <a class="shot__open js-play" href="media/realtor-reel.mp4" data-preview="media/previews/realtor-reel.mp4"
+          data-video="media/realtor-reel.mp4" data-poster="media/posters/realtor-reel.webp" data-ratio="9/16"
+          data-title-ru="Reels с призывом" data-title-en="Reel with a call to action">
+          <img src="media/posters/realtor-reel.webp" width="720" height="1280" loading="lazy" decoding="async" alt=""
+            data-alt-ru="Ведущий на кухне, над ним надпись «Это не типовая отделка»" data-alt-en="A presenter in a kitchen under on-screen text">
+          <span class="shot__play" aria-hidden="true"></span>
+        </a>
+        <figcaption>
+          <strong><span lang="ru">Reels с призывом</span><span lang="en">Reel with a call to action</span></strong>
+          <span lang="ru">Ведущий показывает квартиру и зовёт написать за планировкой. 16 секунд.</span>
+          <span lang="en">The presenter shows the apartment and asks viewers to message for the floor plan. 16 seconds.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block__head">
+      <h3><span lang="ru">Комплекс целиком</span><span lang="en">The whole complex</span></h3>
+      <p>
+        <span lang="ru">Облёт и презентация показывают расположение, территорию и виды. Горизонтальный формат для сайта, показов и рекламы.</span>
+        <span lang="en">A flyover and a presentation show the location, the grounds and the views. Horizontal films for your website, viewings and ads.</span>
+      </p>
+    </div>
+    <div class="duo">
+      <figure class="shot shot--wide duo__main">
+        <a class="shot__open js-play" href="media/flyover.mp4" data-preview="media/previews/flyover.mp4"
+          data-video="media/flyover.mp4" data-poster="media/posters/flyover.webp" data-ratio="16/9"
+          data-title-ru="Облёт комплекса" data-title-en="Flyover of the complex">
+          <img src="media/posters/flyover.webp" width="1280" height="720" loading="lazy" decoding="async" alt=""
+            data-alt-ru="Два корпуса комплекса и берег с воздуха" data-alt-en="The two buildings and the shore from the air">
+          <span class="shot__play" aria-hidden="true"></span>
+        </a>
+        <figcaption>
+          <strong><span lang="ru">Облёт комплекса</span><span lang="en">Flyover of the complex</span></strong>
+          <span lang="ru">Корпуса, территория и берег с воздуха. 19 секунд, без звука.</span>
+          <span lang="en">The buildings, the grounds and the shore from the air. 19 seconds, silent.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="shot shot--wide duo__side">
+        <a class="shot__open js-play" href="media/estate-presentation.mp4" data-preview="media/previews/estate-presentation.mp4"
+          data-video="media/estate-presentation.mp4" data-poster="media/posters/estate-presentation.webp" data-ratio="16/9"
+          data-title-ru="Презентация объекта" data-title-en="Property presentation">
+          <img src="media/posters/estate-presentation.webp" width="1280" height="720" loading="lazy" decoding="async" alt=""
+            data-alt-ru="Вечерний бассейн жилого комплекса" data-alt-en="The complex pool at dusk">
+          <span class="shot__play" aria-hidden="true"></span>
+        </a>
+        <figcaption>
+          <strong><span lang="ru">Презентация объекта</span><span lang="en">Property presentation</span></strong>
+          <span lang="ru">Вид с воздуха, пляж, бассейн, вечерний вход. 23 секунды, без звука.</span>
+          <span lang="en">Aerial view, beach, pool, the entrance at dusk. 23 seconds, silent.</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <figure class="stills">
+      <div class="stills__strip stills__strip--7">
+        <a class="still js-zoom" href="media/stills/view-aerial-day-1600.webp" data-title-ru="Комплекс с воздуха" data-title-en="The complex from the air">
+          <img src="media/stills/view-aerial-day-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="" data-alt-ru="Комплекс с воздуха днём" data-alt-en="The complex from the air by day"></a>
+        <a class="still js-zoom" href="media/stills/view-beach-day-1600.webp" data-title-ru="Пляж" data-title-en="The beach">
+          <img src="media/stills/view-beach-day-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="" data-alt-ru="Пляж с зонтами и лежаками" data-alt-en="The beach with umbrellas and loungers"></a>
+        <a class="still js-zoom" href="media/stills/view-pool-day-1600.webp" data-title-ru="Бассейн днём" data-title-en="The pool by day">
+          <img src="media/stills/view-pool-day-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="" data-alt-ru="Бассейн днём" data-alt-en="The pool by day"></a>
+        <a class="still js-zoom" href="media/stills/view-pool-eve-1600.webp" data-title-ru="Бассейн вечером" data-title-en="The pool in the evening">
+          <img src="media/stills/view-pool-eve-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="" data-alt-ru="Бассейн вечером" data-alt-en="The pool in the evening"></a>
+        <a class="still js-zoom" href="media/stills/view-entrance-eve-1600.webp" data-title-ru="Вход вечером" data-title-en="The entrance in the evening">
+          <img src="media/stills/view-entrance-eve-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="" data-alt-ru="Вход в комплекс вечером" data-alt-en="The entrance in the evening"></a>
+        <a class="still js-zoom" href="media/stills/view-complex-eve-1600.webp" data-title-ru="Комплекс вечером" data-title-en="The complex in the evening">
+          <img src="media/stills/view-complex-eve-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="" data-alt-ru="Комплекс вечером с воздуха" data-alt-en="The complex in the evening from above"></a>
+        <a class="still js-zoom" href="media/stills/view-street-day-1600.webp" data-title-ru="Вид с улицы" data-title-en="Street view">
+          <img src="media/stills/view-street-day-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="" data-alt-ru="Комплекс с улицы днём" data-alt-en="The complex from the street by day"></a>
+      </div>
+      <figcaption>
+        <span lang="ru">Фотореалистичные виды для объявлений, сайта и печати. Нажмите, чтобы увеличить.</span>
+        <span lang="en">Photoreal views for listings, your website and print. Tap to enlarge.</span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="block">
+    <div class="block__head">
+      <h3><span lang="ru">Квартира изнутри</span><span lang="en">Inside the apartment</span></h3>
+      <p>
+        <span lang="ru">Камера проходит по комнатам каждой планировки. Покупатель понимает квартиру ещё до показа.</span>
+        <span lang="en">The camera moves through the rooms of each layout. Buyers understand the apartment before the viewing.</span>
+      </p>
+    </div>
+    <div class="inside">
+      <figure class="shot shot--wide inside__main">
+        <a class="shot__open js-play" href="media/rooms-tour.mp4" data-preview="media/previews/rooms-tour.mp4"
+          data-video="media/rooms-tour.mp4" data-poster="media/posters/rooms-tour.webp" data-ratio="16/9"
+          data-title-ru="Тур по трём планировкам" data-title-en="A tour of three layouts">
+          <img src="media/posters/rooms-tour.webp" width="1280" height="720" loading="lazy" decoding="async" alt=""
+            data-alt-ru="Гостиная с видом на море" data-alt-en="A living room with a sea view">
+          <span class="shot__play" aria-hidden="true"></span>
+        </a>
+        <figcaption>
+          <strong><span lang="ru">Тур по трём планировкам</span><span lang="en">A tour of three layouts</span></strong>
+          <span lang="ru">Гостиная, кухня, спальня и ванная в каждой. 60 секунд, без звука.</span>
+          <span lang="en">Living room, kitchen, bedroom and bathroom in each. 60 seconds, silent.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="stills inside__side">
+        <div class="stills__strip stills__strip--6">
+          <a class="still js-zoom" href="media/stills/interior-c-living-1600.webp" data-title-ru="Гостиная" data-title-en="Living room">
+            <img src="media/stills/interior-c-living-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="" data-alt-ru="Гостиная с панорамными окнами" data-alt-en="A living room with panoramic windows"></a>
+          <a class="still js-zoom" href="media/stills/interior-c-kitchen-1600.webp" data-title-ru="Кухня" data-title-en="Kitchen">
+            <img src="media/stills/interior-c-kitchen-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="" data-alt-ru="Кухня" data-alt-en="A kitchen"></a>
+          <a class="still js-zoom" href="media/stills/interior-a-living-1600.webp" data-title-ru="Гостиная" data-title-en="Living room">
+            <img src="media/stills/interior-a-living-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="" data-alt-ru="Гостиная с выходом на балкон" data-alt-en="A living room opening onto a balcony"></a>
+          <a class="still js-zoom" href="media/stills/interior-a-bedroom-1600.webp" data-title-ru="Спальня" data-title-en="Bedroom">
+            <img src="media/stills/interior-a-bedroom-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="" data-alt-ru="Спальня" data-alt-en="A bedroom"></a>
+          <a class="still js-zoom" href="media/stills/interior-b-living-1600.webp" data-title-ru="Гостиная" data-title-en="Living room">
+            <img src="media/stills/interior-b-living-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="" data-alt-ru="Гостиная" data-alt-en="A living room"></a>
+          <a class="still js-zoom" href="media/stills/interior-c-bath-1600.webp" data-title-ru="Ванная" data-title-en="Bathroom">
+            <img src="media/stills/interior-c-bath-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="" data-alt-ru="Ванная" data-alt-en="A bathroom"></a>
+        </div>
+        <figcaption>
+          <span lang="ru">Интерьеры трёх планировок. Нажмите, чтобы увеличить.</span>
+          <span lang="en">Interiors of three layouts. Tap to enlarge.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="steps wrap" id="steps">
+  <h2 class="title"><span lang="ru">Этапы работы</span><span lang="en">How we work</span></h2>
+  <ol class="steps__list">
+    <li>
+      <h3><span lang="ru">Заявка</span><span lang="en">Brief</span></h3>
+      <p>
+        <span lang="ru">Пишете в Telegram: какой объект, на какой он стадии и где будете показывать ролик.</span>
+        <span lang="en">You message me on Telegram: what the property is, what stage it's at and where the film will run.</span>
+      </p>
+    </li>
+    <li>
+      <h3><span lang="ru">Материалы</span><span lang="en">Materials</span></h3>
+      <p>
+        <span lang="ru">Присылаете чертежи, планировки, фото или рендеры. Подойдёт всё, что есть по объекту.</span>
+        <span lang="en">You send drawings, floor plans, photos or renders. Anything you have on the property helps.</span>
+      </p>
+    </li>
+    <li>
+      <h3><span lang="ru">Модель и ракурсы</span><span lang="en">Model and angles</span></h3>
+      <p>
+        <span lang="ru">Собираю 3D-модель объекта и согласую с вами ракурсы и сцены.</span>
+        <span lang="en">I build a 3D model of the property and agree the camera angles and scenes with you.</span>
+      </p>
+    </li>
+    <li>
+      <h3><span lang="ru">Ролики и изображения</span><span lang="en">Films and images</span></h3>
+      <p>
+        <span lang="ru">Делаю фотореалистичные кадры и ролики, монтирую, добавляю звук и титры.</span>
+        <span lang="en">I produce photoreal shots and films, edit them, and add sound and titles.</span>
+      </p>
+    </li>
+    <li>
+      <h3><span lang="ru">Правки и файлы</span><span lang="en">Revisions and files</span></h3>
+      <p>
+        <span lang="ru">Вношу правки и отдаю файлы в нужных форматах: вертикальные, горизонтальные, изображения.</span>
+        <span lang="en">I make revisions and deliver files in the formats you need: vertical, horizontal, stills.</span>
+      </p>
+    </li>
+  </ol>
+</section>
+
+<section class="about wrap" id="about">
+  <div class="about__text">
+    <h2 class="title"><span lang="ru">Обо мне</span><span lang="en">About</span></h2>
+    <p class="about__lead">
+      <span lang="ru">Я Raian. Делаю 3D, видео и контент для продажи недвижимости. Работаю из Финляндии.</span>
+      <span lang="en">I'm Raian. I make 3D, video and content for selling property. I work from Finland.</span>
+    </p>
+    <p>
+      <span lang="ru">Работаю от материалов объекта: чертежей, планировок, рендеров или фото. Для комплексов собираю 3D-модель, чтобы виды и ролики совпадали.</span>
+      <span lang="en">I work from the property's materials: drawings, floor plans, renders or photos. For complexes I build a 3D model so the views and films match.</span>
+    </p>
+    <p class="about__tools">
+      <span lang="ru">В работе: Blender, Kling, Higgsfield и CapCut.</span>
+      <span lang="en">Tools: Blender, Kling, Higgsfield and CapCut.</span>
+    </p>
+  </div>
+  <figure class="stills about__clip">
+    <a class="still still--strip js-zoom" href="media/stills/build-stages-1600.webp" data-title-ru="Пять кадров одного ролика" data-title-en="Five frames of one film">
+      <img src="media/stills/build-stages-800.webp" srcset="media/stills/build-stages-800.webp 800w, media/stills/build-stages-1600.webp 1600w" sizes="(min-width: 900px) 42vw, 92vw" width="1600" height="566" loading="lazy" decoding="async" alt=""
+        data-alt-ru="Пять кадров: пустой участок, фундамент, каркас, фасад, готовый дом" data-alt-en="Five frames: empty plot, foundation, frame, facade, finished building"></a>
+    <figcaption>
+      <span lang="ru">Пять ключевых кадров ролика «Комплекс строится сам»: от участка до готового дома.</span>
+      <span lang="en">Five key frames of The complex builds itself, from the plot to the finished building.</span>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="faq wrap" id="faq">
+  <h2 class="title"><span lang="ru">Частые вопросы</span><span lang="en">Common questions</span></h2>
+  <div class="faq__list">
+    <details>
+      <summary><span lang="ru">Дом ещё не построен. Этого достаточно?</span><span lang="en">The building isn’t finished yet. Is that enough?</span></summary>
+      <p><span lang="ru">Да. Нужны чертежи, планировки или рендеры: по ним собирается 3D-модель. Готовые материалы помечаются как визуализация проекта.</span><span lang="en">Yes. Drawings, floor plans or renders are enough to build the 3D model. Finished materials are marked as a project visualisation.</span></p>
+    </details>
+    <details>
+      <summary><span lang="ru">Что нужно от меня?</span><span lang="en">What do you need from me?</span></summary>
+      <p><span lang="ru">Материалы по объекту, ответы на вопросы о нём и согласование ракурсов. Остальное делаю я.</span><span lang="en">Materials on the property, answers to a few questions about it, and your approval of the camera angles. I do the rest.</span></p>
+    </details>
+    <details>
+      <summary><span lang="ru">Кто в кадре?</span><span lang="en">Who is on screen?</span></summary>
+      <p><span lang="ru">Виртуальный ведущий. Это придуманный персонаж без реального прототипа. Лицо и голос реального человека использую только с его согласия.</span><span lang="en">A virtual presenter: an invented character with no real-life original. A real person’s face or voice is used only with their consent.</span></p>
+    </details>
+    <details>
+      <summary><span lang="ru">Сколько это стоит и как долго делается?</span><span lang="en">How much does it cost and how long does it take?</span></summary>
+      <p><span lang="ru">Зависит от объекта и набора продуктов. Цену и срок называю после заявки, до начала работы.</span><span lang="en">It depends on the property and the set of products. You get the price and the timeline after the brief, before work starts.</span></p>
+    </details>
+    <details>
+      <summary><span lang="ru">В каких форматах вы отдаёте материалы?</span><span lang="en">What formats do you deliver?</span></summary>
+      <p><span lang="ru">Вертикальные ролики 9:16 и горизонтальные 16:9 в 1080p и 4K, изображения в 2K.</span><span lang="en">Vertical 9:16 and horizontal 16:9 films in 1080p and 4K, and images at 2K.</span></p>
+    </details>
+    <details>
+      <summary><span lang="ru">Можно заказать один ролик, а не комплект?</span><span lang="en">Can I order one film instead of a kit?</span></summary>
+      <p><span lang="ru">Да. Продукты можно брать по отдельности.</span><span lang="en">Yes. Each product can be ordered on its own.</span></p>
+    </details>
+  </div>
+</section>
+
+<section class="contact wrap" id="contact">
+  <h2 class="title title--xl">
+    <span lang="ru">Расскажите об&nbsp;объекте</span>
+    <span lang="en">Tell me about your property</span>
+  </h2>
+  <p class="lede">
+    <span lang="ru">Напишите в Telegram три вещи. В ответ предложу комплект материалов, цену и срок.</span>
+    <span lang="en">Message me on Telegram with three things. I'll reply with a kit of materials, a price and a timeline.</span>
+  </p>
+  <ol class="contact__ask">
+    <li><span lang="ru">Какой объект и на какой он стадии</span><span lang="en">What the property is and what stage it's at</span></li>
+    <li><span lang="ru">Что есть: чертежи, планировки, рендеры, фото</span><span lang="en">What you have: drawings, floor plans, renders, photos</span></li>
+    <li><span lang="ru">Где продаёте: сайт, объявления, соцсети</span><span lang="en">Where you sell: website, listings, social</span></li>
+  </ol>
+  <div class="contact__actions">
+    <a class="btn btn--big" href="https://t.me/raian_bagautdinov" target="_blank" rel="noopener">
+      <span lang="ru">Написать в Telegram</span><span lang="en">Message on Telegram</span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot wrap">
+  <p>
+    <span lang="ru">Raian Visuals. Видео, 3D и соцсети для продажи недвижимости. Финляндия.</span>
+    <span lang="en">Raian Visuals. Video, 3D and social for selling property. Finland.</span>
+  </p>
+</footer>
+
+<div class="dock" aria-hidden="true">
+  <a class="btn" href="https://t.me/raian_bagautdinov" target="_blank" rel="noopener" tabindex="-1">
+    <span lang="ru">Написать в Telegram</span><span lang="en">Message on Telegram</span>
+  </a>
+</div>
+
+<dialog class="player" id="player" aria-labelledby="player-title">
+  <div class="player__bar">
+    <p class="player__title" id="player-title"></p>
+    <button class="player__close" type="button">
+      <span lang="ru">Закрыть</span><span lang="en">Close</span>
+    </button>
+  </div>
+  <div class="player__stage">
+    <video controls playsinline preload="none"></video>
+    <img class="player__image" alt="" hidden>
+    <p class="player__error" hidden>
+      <span lang="ru">Не загрузилось. Проверьте соединение и откройте ещё раз.</span>
+      <span lang="en">It didn't load. Check your connection and open it again.</span>
+    </p>
+  </div>
+</dialog>
+
+<script src="script.js" defer></script>
+</body>
+</html>

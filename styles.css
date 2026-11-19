@@ -867,3 +867,10 @@ main > section.contact {
 
   .player__stage video, .player__stage img { inset: 0 var(--pad) 1.5rem var(--pad); width: calc(100% - var(--pad) * 2); height: calc(100% - 1.5rem); }
 }
+
+/* Узкий компьютерный экран: шапка с пятью разделами и кнопкой связи помещается без выхода за поля */
+@media (min-width: 900px) and (max-width: 1023.98px) {
+  .top { gap: 1rem; }
+  .nav { gap: 1.1rem; }
+  .top__cta { padding-inline: 0.8rem; }
+}

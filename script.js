@@ -176,12 +176,12 @@
 
   var meta = {
     ru: {
-      title: 'Raian Visuals — видео, 3D и соцсети для продажи ЖК',
-      description: 'Raian Visuals готовит застройщикам и риэлторам комплект для продаж: 3D-модель объекта, фотореалистичные виды, ролики с ведущим и контент для соцсетей.'
+      title: 'Raian Visuals — визуализация недвижимости: ролики и 3D-виды',
+      description: 'Raian Visuals — визуализация недвижимости для застройщиков и риелторов: ролики, 3D-виды и контент для соцсетей.'
     },
     en: {
-      title: 'Raian Visuals — video, 3D and social to sell new homes',
-      description: 'Raian Visuals gives developers and realtors a sales kit: a 3D model, photoreal views, presenter-led films and social content.'
+      title: 'Raian Visuals — property visualisation: films and 3D views',
+      description: 'Raian Visuals — property visualisation for developers and realtors: films, 3D views and social content.'
     }
   };
 
@@ -495,6 +495,22 @@
       updateDock();
     }, { threshold: 0.25 }).observe(contactEl);
   }
+  /* ---------- Меню для телефона ----------
+     Список разделов раскрывается и без скрипта (details); скрипт только закрывает его после выбора. */
+
+  var menu = document.querySelector('.menu');
+  if (menu) {
+    menu.addEventListener('click', function (e) {
+      if (e.target.closest && e.target.closest('a')) menu.open = false;
+    });
+    document.addEventListener('click', function (e) {
+      if (menu.open && !menu.contains(e.target)) menu.open = false;
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+    });
+  }
+
   /* ---------- 3D-модель комплекса ----------
      Движок и модель (около 3 МБ) подгружаются отдельно: на компьютере — когда блок близко к экрану,
      на телефоне и в режиме экономии трафика — только по кнопке. Колесо мыши приближает модель

@@ -879,3 +879,6 @@ main > section.contact {
   .nav { gap: 1.1rem; }
   .top__cta { padding-inline: 0.8rem; }
 }
+
+/* Сравнение «3D-модель и готовый ролик»: широкий ролик под рядом вертикальных */
+.block > .shot--compare { margin-top: clamp(2rem, 5vw, 3.5rem); }

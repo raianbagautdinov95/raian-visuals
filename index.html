@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Raian Visuals — визуализация недвижимости: ролики и 3D-виды</title>
 <meta name="description" content="Raian Visuals — визуализация недвижимости для застройщиков и риелторов: ролики, 3D-виды и контент для соцсетей.">
-<meta name="theme-color" content="#08113A">
+<meta name="theme-color" content="#0A0F1A">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Raian Visuals — визуализация недвижимости: ролики и 3D-виды">
 <meta property="og:description" content="Raian Visuals — визуализация недвижимости для застройщиков и риелторов: ролики, 3D-виды и контент для соцсетей.">
@@ -720,16 +720,49 @@
     <span lang="en">Tell me about your property</span>
   </h2>
   <p class="lede">
-    <span lang="ru">Напишите в Telegram три вещи. В ответ предложу комплект материалов, цену и срок.</span>
-    <span lang="en">Message me on Telegram with three things. I'll reply with a kit of materials, a price and a timeline.</span>
+    <span lang="ru">Отметьте, что подходит, и напишите в Telegram. В ответ предложу комплект материалов, цену и срок.</span>
+    <span lang="en">Pick what fits and message me on Telegram. I'll reply with a kit of materials, a price and a timeline.</span>
   </p>
-  <ol class="contact__ask">
-    <li><span lang="ru">Какой объект и на какой он стадии</span><span lang="en">What the property is and what stage it's at</span></li>
-    <li><span lang="ru">Что есть: чертежи, планировки, рендеры, фото</span><span lang="en">What you have: drawings, floor plans, renders, photos</span></li>
-    <li><span lang="ru">Где продаёте: сайт, объявления, соцсети</span><span lang="en">Where you sell: website, listings, social</span></li>
-  </ol>
+  <noscript><style>.brief__chips { display: none; }</style></noscript>
+  <div class="brief" id="brief">
+    <fieldset class="brief__q">
+      <legend><span class="brief__n" aria-hidden="true">1</span><span><span lang="ru">Какой объект и на какой он стадии</span><span lang="en">What the property is and what stage it's at</span></span></legend>
+      <div class="brief__chips">
+      <label class="chip"><input type="radio" name="brief-object" data-ru="жилой комплекс" data-en="a residential complex"><span class="chip__text"><span lang="ru">Жилой комплекс</span><span lang="en">Residential complex</span></span></label>
+      <label class="chip"><input type="radio" name="brief-object" data-ru="дом или таунхаусы" data-en="a house or townhouses"><span class="chip__text"><span lang="ru">Дом или таунхаусы</span><span lang="en">House or townhouses</span></span></label>
+      <label class="chip"><input type="radio" name="brief-object" data-ru="квартира" data-en="an apartment"><span class="chip__text"><span lang="ru">Квартира</span><span lang="en">Apartment</span></span></label>
+      </div>
+      <div class="brief__chips">
+      <label class="chip"><input type="radio" name="brief-stage" data-ru="на стадии проекта" data-en="at design stage"><span class="chip__text"><span lang="ru">Проект</span><span lang="en">Design stage</span></span></label>
+      <label class="chip"><input type="radio" name="brief-stage" data-ru="стройка идёт" data-en="under construction"><span class="chip__text"><span lang="ru">Стройка идёт</span><span lang="en">Under construction</span></span></label>
+      <label class="chip"><input type="radio" name="brief-stage" data-ru="дом сдан" data-en="completed"><span class="chip__text"><span lang="ru">Дом сдан</span><span lang="en">Completed</span></span></label>
+      </div>
+    </fieldset>
+    <fieldset class="brief__q">
+      <legend><span class="brief__n" aria-hidden="true">2</span><span><span lang="ru">Что есть</span><span lang="en">What you have</span></span></legend>
+      <div class="brief__chips">
+      <label class="chip"><input type="checkbox" name="brief-have" data-ru="чертежи" data-en="drawings"><span class="chip__text"><span lang="ru">Чертежи</span><span lang="en">Drawings</span></span></label>
+      <label class="chip"><input type="checkbox" name="brief-have" data-ru="планировки" data-en="floor plans"><span class="chip__text"><span lang="ru">Планировки</span><span lang="en">Floor plans</span></span></label>
+      <label class="chip"><input type="checkbox" name="brief-have" data-ru="рендеры" data-en="renders"><span class="chip__text"><span lang="ru">Рендеры</span><span lang="en">Renders</span></span></label>
+      <label class="chip"><input type="checkbox" name="brief-have" data-ru="фото" data-en="photos"><span class="chip__text"><span lang="ru">Фото</span><span lang="en">Photos</span></span></label>
+      <label class="chip"><input type="checkbox" name="brief-have" data-ru="" data-en="" data-none><span class="chip__text"><span lang="ru">Пока ничего</span><span lang="en">Nothing yet</span></span></label>
+      </div>
+    </fieldset>
+    <fieldset class="brief__q">
+      <legend><span class="brief__n" aria-hidden="true">3</span><span><span lang="ru">Где продаёте</span><span lang="en">Where you sell</span></span></legend>
+      <div class="brief__chips">
+      <label class="chip"><input type="checkbox" name="brief-sell" data-ru="сайт" data-en="website"><span class="chip__text"><span lang="ru">Сайт</span><span lang="en">Website</span></span></label>
+      <label class="chip"><input type="checkbox" name="brief-sell" data-ru="объявления" data-en="listings"><span class="chip__text"><span lang="ru">Объявления</span><span lang="en">Listings</span></span></label>
+      <label class="chip"><input type="checkbox" name="brief-sell" data-ru="соцсети" data-en="social media"><span class="chip__text"><span lang="ru">Соцсети</span><span lang="en">Social media</span></span></label>
+      </div>
+    </fieldset>
+  </div>
+  <p class="brief__preview" id="brief-preview" aria-live="polite" hidden>
+    <b><span lang="ru">Telegram откроется с этим сообщением:</span><span lang="en">Telegram will open with this message:</span></b>
+    <span id="brief-text"></span>
+  </p>
   <div class="contact__actions">
-    <a class="btn btn--big" href="https://t.me/raian_bagautdinov" target="_blank" rel="noopener">
+    <a class="btn btn--big" id="brief-send" href="https://t.me/raian_bagautdinov" target="_blank" rel="noopener">
       <span lang="ru">Написать в Telegram</span><span lang="en">Message on Telegram</span>
     </a>
   </div>

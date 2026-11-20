@@ -202,6 +202,7 @@
       el.setAttribute('aria-label', el.getAttribute('data-label-' + lang));
     });
     if (panels.length) refreshHeroText();
+    refreshBrief();
     var openTitle = document.getElementById('player-title');
     if (openTitle && currentTrigger) {
       openTitle.textContent = currentTrigger.getAttribute('data-title-' + lang) || '';
@@ -210,6 +211,70 @@
       try { localStorage.setItem('rs-lang', lang); } catch (e) { /* хранилище недоступно, язык действует до перезагрузки */ }
     }
   }
+
+  /* ---------- Готовое сообщение для Telegram ----------
+     Посетитель отмечает ответы на три вопроса; по ним собирается текст,
+     и кнопка открывает чат с уже набранным сообщением (t.me/<имя>?text=…).
+     Ничего никуда не отправляется: текст уходит только вместе с переходом в Telegram. */
+
+  var TELEGRAM = 'https://t.me/raian_bagautdinov';
+  var BRIEF = {
+    ru: { hello: 'Здравствуйте!', object: 'Объект: ', have: 'Есть: ', none: 'Материалов пока нет.', sell: 'Продаём: ' },
+    en: { hello: 'Hello!', object: 'Property: ', have: 'I have: ', none: 'No materials yet.', sell: 'We sell via: ' }
+  };
+
+  function briefValues(name, lang) {
+    var out = [];
+    each(document.querySelectorAll('#brief input[name="' + name + '"]'), function (i) {
+      if (i.checked && !i.hasAttribute('data-none')) out.push(i.getAttribute('data-' + lang));
+    });
+    return out;
+  }
+
+  function refreshBrief() {
+    var box = document.getElementById('brief');
+    var send = document.getElementById('brief-send');
+    if (!box || !send) return;
+    var lang = root.lang === 'en' ? 'en' : 'ru';
+    var t = BRIEF[lang];
+    var parts = [];
+    var object = briefValues('brief-object', lang).concat(briefValues('brief-stage', lang));
+    if (object.length) parts.push(t.object + object.join(', ') + '.');
+    var have = briefValues('brief-have', lang);
+    var none = box.querySelector('input[data-none]');
+    if (have.length) parts.push(t.have + have.join(', ') + '.');
+    else if (none && none.checked) parts.push(t.none);
+    var sell = briefValues('brief-sell', lang);
+    if (sell.length) parts.push(t.sell + sell.join(', ') + '.');
+
+    var preview = document.getElementById('brief-preview');
+    var text = document.getElementById('brief-text');
+    if (!parts.length) {
+      send.setAttribute('href', TELEGRAM);
+      if (preview) preview.hidden = true;
+      return;
+    }
+    var message = t.hello + ' ' + parts.join(' ');
+    send.setAttribute('href', TELEGRAM + '?text=' + encodeURIComponent(message));
+    if (text) text.textContent = message;
+    if (preview) preview.hidden = false;
+  }
+
+  (function () {
+    var box = document.getElementById('brief');
+    if (!box) return;
+    box.addEventListener('change', function (e) {
+      var i = e.target;
+      if (i && i.name === 'brief-have' && i.checked) {
+        /* «Пока ничего» и перечень материалов исключают друг друга */
+        var isNone = i.hasAttribute('data-none');
+        each(box.querySelectorAll('input[name="brief-have"]'), function (o) {
+          if (o !== i && o.hasAttribute('data-none') !== isNone) o.checked = false;
+        });
+      }
+      refreshBrief();
+    });
+  })();
 
   each(document.querySelectorAll('[data-set-lang]'), function (b) {
     b.addEventListener('click', function () { applyLang(b.getAttribute('data-set-lang'), true); });
